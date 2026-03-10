@@ -10,32 +10,35 @@
   <body>
     <!-- Your card goes here-->
     <div class="profile-card">
-      <img class="profile-card__avatar" src="./my_avatar.jpg" alt="" />
+      <!-- My image is visible and added here -->
+      <img class="profile-card__avatar" src="./my_pic.jpg" alt="A pic of me" />
       <h3 class="profile-card__name">Christian Ekoh</h3>
       <h4 class="profile-card__title">Frontend Developer in Training</h4>
       <p class="profile-card__bio">
         My name is Christian and I am a Frontend Developer in Training. I hope
         to learn to build scalable apps that solves real world problems
       </p>
+      <!-- My social links -->
       <div class="profile-card__socials">
-        <button class="profile-card__socials--twitter-btn">Twitter</button>
-        <button class="profile-card__socials--github-btn">Github</button>
+        <a href="#"><button class="profile-card__socials--twitter-btn">Twitter</button></a>
+        <a href="#"><button class="profile-card__socials--github-btn">Github</button></a>
+        <a href="#"><button class="profile-card__socials--linkedin--btn">LinkedIn</button></a>
       </div>
-
+      <!-- My stats is here -->
       <div class="profile-card__stats">
-        <div class="profile-card__stats--items">
-          <span class="profile-card__stats--lable">Projects:</span>
-          <span class="profile-card__stats--value">12</span>
+        <div class="profile-card__stats--item">
+          <span class="profile-card__stats--number">12</span>
+          <span class="profile-card__stats--label">Project</span>
         </div>
 
-        <div class="profile-card__stats--items">
-          <span class="profile-card__stats--lable">Followers:</span>
-          <span class="profile-card__stats--value">1.5k</span>
+        <div class="profile-card__stats--item">
+          <span class="profile-card__stats--number">1.5k</span>
+          <span class="profile-card__stats--label">Followers</span>
         </div>
 
-        <div class="profile-card__stats--items">
-          <span class="profile-card__stats--lable">Following:</span>
-          <span class="profile-card__stats--value">324</span>
+        <div class="profile-card__stats--item">
+          <span class="profile-card__stats--number">324</span>
+          <span class="profile-card__stats--label">Following</span>
         </div>
       </div>
     </div>

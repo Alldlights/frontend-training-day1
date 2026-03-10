@@ -1,9 +1,18 @@
 :root {
   /* COLORS */
-  --primary-color: #007bff;
-  --secondary-color: #6c757d;
+  --primary-color1: darkblue;
+  --primary-color2:  #666;
+  --secondary-color1: #6c757d;
   --text-color: #333333;
   --background-color: #faf8fa;
+  --color1: #007bff;
+  --color2: white;
+  --color3: #0056b3;
+  --color4: lightsalmon;
+  --color5: darksalmon;
+  --color6: #333;
+  --color7: #999;
+  --color8: #eee;
   /* EFFECTS */
   --border-radius: 15px;
   --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -77,7 +86,7 @@
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 .profile-card__name:hover {
-  color: #666;
+  color: var(--primary-color2);
 }
 
 .profile-card__title {
@@ -87,13 +96,13 @@
 
 .profile-card__bio {
   font-family: "Courier New", Courier, monospace;
-  color: #666;
+  color: var(--primary-color2);
   margin: 150x 0;
   line-height: 1.5;
   transform: color 0.3s ease;
 }
 .profile-card__bio:hover {
-  color: #333;
+  color: var(--color6);
 }
 
 .profile-card__socials {
@@ -104,8 +113,8 @@
 
 .profile-card__socials--twitter-btn {
   padding: 12px 30px;
-  background: #007bff;
-  color: white;
+  background: var(--color1);
+  color: var(--color2);
   border: none;
   font-size: 16px;
   border-radius: 25px;
@@ -115,19 +124,19 @@
   overflow: hidden;
 }
 .profile-card__socials--twitter-btn:hover {
-  background: #0056b3;
+  background: var(--color3);
   transform: scale(1.05);
 }
 
 .profile-card__socials--github-btn:hover {
-  background-color: darksalmon;
+  background-color: var(--color5);
   transform: scale(1.05);
 }
 
 .profile-card__socials--github-btn {
   padding: 12px 30px;
-  background: lightsalmon;
-  color: white;
+  background: var(--color4);
+  color: var(--color2);
   border: none;
   font-size: 16px;
   border-radius: 25px;
@@ -137,31 +146,44 @@
   overflow: hidden;
 }
 
-.profile-card__stats {
-  display: flex;
-  justify-content: space-around;
-  margin: 20px 0;
-  padding: 15px 0;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
-}
-.profile-card__stats {
+.profile-card__socials--linkedin--btn{
+  padding: 12px 30px;
+  background: var(--primary-color1);
+  color: var(--color2);
+  border: none;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
   transition: all 0.3s ease;
-  cursor: default;
-}
-.profile-card__stats:hover {
-  transform: scale(1.1);
-  color: #333;
+  position: relative;
+  overflow: hidden;
 }
 
-.profile-card__stats--value {
-  font-size: 15px;
-  font-weight: bold;
-  color: #333;
-  transition: color 0.3 ease;
+.profile-card__socials--linkedin--btn:hover{
+  background-color: var(--color3);
+  transform: scale(1.05);
 }
-.profile-card__stats--lable {
-  font-size: 12px;
-  color: #999;
-  text-transform: uppercase;
+.profile-card__stats{
+  display: flex;
+  justify-content: space-around;
+  margin: 1.5rem 0;
+  padding: 1rem 0;
+  border-top: 1px solid var(--color8);
+  border-bottom: 1px sold var(--color8);
+}
+
+.profile-card__stats--item{
+  text-align: center;
+}
+
+.profile-card__stats--number{
+  display: block;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--color7);
+}
+
+.profile-card__stats--label{
+  font-size: 0.875rem;
+  color: var(--color6);
 }
