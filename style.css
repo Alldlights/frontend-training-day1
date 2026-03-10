@@ -165,6 +165,7 @@
 }
 .profile-card__stats{
   display: flex;
+  flex: 1;
   justify-content: space-around;
   margin: 1.5rem 0;
   padding: 1rem 0;
@@ -179,11 +180,11 @@
 .profile-card__stats--number{
   display: block;
   font-weight: 700;
-  font-size: 1.25rem;
-  color: var(--color7);
+  font-size: 1.5rem;
+  color: var(--text-color);
 }
 
 .profile-card__stats--label{
-  font-size: 0.875rem;
-  color: var(--color6);
+  font-size: 0.85rem;
+  color: var(--color7);
 }
